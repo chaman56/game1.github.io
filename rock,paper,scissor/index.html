@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock|paper|scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app2.js"></script>
+</head>
+
+<body>
+    <section class="canvas">
+        <div class="container">
+            <h2>Computer Choice: <span id="computer-choice"> </span></h2>
+            <h2>Your Choice: <span id="user-choice"> </span></h2>
+
+            <button id="rock" onclick="replyclick(this.id)"><img src="images/rock.png" alt=""><br> rock</button>
+            <button id="paper" onclick="replyclick(this.id)"><img src="images/paper.png" alt=""><br> paper</button>
+            <button id="scissor" onclick="replyclick(this.id)"><img src="images/scissor1.png" alt=""><br>
+                scissor</button><br><br>
+            <div class="none" id="result-window">
+                <span id="result"></span><br>
+                <button id="retry" onclick="retry()">TRY AGAIN !</button>
+            </div>
+            <script>
+                function retry() {
+                    document.getElementById('result-window').setAttribute('class', "none")
+                }
+            </script>
+        </div>
+    </section>
+
+</body>
+
+</html>
